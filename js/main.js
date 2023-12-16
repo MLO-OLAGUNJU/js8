@@ -19,7 +19,7 @@ let soupAcess = isCustomerBanned
 console.log(soupAcess);
  */
 
-let testScore = 79;
+/* let testScore = 79;
 let myGrade =
   testScore > 89
     ? `A`
@@ -32,4 +32,23 @@ let myGrade =
     : testScore > 49
     ? "E"
     : "F";
-console.log(`My test grade is ${myGrade}`);
+console.log(`My test grade is ${myGrade}.`); */
+
+// Rock paper scissors
+//tenary operators
+
+let playerOne = `scissors`;
+let computer = `rock`;
+
+let gameResult =
+  playerOne === computer
+    ? `Tie game!`
+    : playerOne === `rock` && computer === `scissors`
+    ? `playerOne wins!`
+    : playerOne === `scissors` && computer === `paper`
+    ? `playerOne wins!`
+    : playerOne === `rock` && computer === `paper`
+    ? `computer wins!`
+    : `playerOne wins!`;
+
+console.log(gameResult);
